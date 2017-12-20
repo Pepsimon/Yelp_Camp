@@ -14,11 +14,10 @@ var methodOverride  =   require("method-override"),
 var campgroundRoutes    =   require("./routes/campgrounds"),
     commentRoutes       =   require("./routes/comments"),
     indexRoutes         =   require("./routes/index");
-    
-// var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v5"
-var url = process.env.DATABASEURL || "mongodb://Pepsimon:$imon$en1985@ds161146.mlab.com:61146/yelpcamper";
+  
+// var url = process.env.DATABASEURL || "mongodb://Pepsimon:$imon$en1985@ds161146.mlab.com:61146/yelpcamper";
 // mongodb://Pepsimon:$imon$en1985@ds161146.mlab.com:61146/yelpcamper
-mongoose.connect(url);
+mongoose.connect(process.env.DATABASEURL);
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
