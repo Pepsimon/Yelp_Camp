@@ -1,2 +1,5 @@
-# Yelp_Camp
+# YelpCamp
 Yelp Camp made in the Web Dev Bootcamp with Colt Steele on Udemy.com. 
+
+
+
